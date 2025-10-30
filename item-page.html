@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehome - Item</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <header>
+        <nav>
+            <div id="navBar" class="card">
+                <button id="hamburgerMenuIcon" onclick="openCloseNav()" class="menuText">&#9776;</button>
+                <img id="logo" src="" alt="Rehome" class="menuText">
+                <div id="shoppingCartMenuContainer">
+                    <a id="shoppingCart" href="shopping-cart.html" class="menuText">&#128722;</a>
+                    <p id="numberOfCartItems">0</p>
+                </div>
+            </div>
+            <div id="menuOverlay">
+                <div id="links">
+                    <a href="index.html" id="homeLink" class="menuText">Home</a>
+                    <a href="shop.html" id="shopLink" class="menuText">Shop</a>
+                    <a href="what-we-buy.html" id="whatWeBuyLink" class="menuText">What we buy</a>
+                    <a href="contact-us.html" id="contactUsLink" class="menuText">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cardBackground">
+            <div id="itemDetailContainer">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer" class="card">
+            <div id = footerText>
+                <div id="footerLinks">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                <a href="choose-room.html">Shop</a>
+                <a href="what-we-buy.html">What we buy</a>
+                <a href="contact-us.html">Contact us</a>
+                </div>
+                <div id="footerContactUs">
+                    <h3>Contact Us</h3>
+                    <p>rehome@email.com <br>
+                    +64 123 456 7899 <br>
+                    0800 12 34 56</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/cartItemHandler.js"></script>
+    <script type="module" src="Scripts/itemPage.js"></script>
+    <script type="module" src="Scripts/shoppingCart.js"></script>
+</body>
+</html>

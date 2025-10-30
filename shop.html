@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehome - Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="shopBody">
+        <header>
+            <nav>
+                <div id="navBar" class="card">
+                    <button id="hamburgerMenuIcon" onclick="openCloseNav()" class="menuText">&#9776;</button>
+                    <img id="logo" src="" alt="Rehome" class="menuText">
+                    <div id="shoppingCartMenuContainer">
+                        <a id="shoppingCart" href="shopping-cart.html" class="menuText">&#128722;</a>
+                        <p id="numberOfCartItems">0</p>
+                    </div>
+                </div>
+                <div id="menuOverlay">
+                    <div id="links">
+                        <a href="index.html" id="homeLink" class="menuText">Home</a>
+                        <a href="shop.html" id="shopLink" class="menuText">Shop</a>
+                        <a href="what-we-buy.html" id="whatWeBuyLink" class="menuText">What we buy</a>
+                        <a href="contact-us.html" id="contactUsLink" class="menuText">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="shop">
+                <h1 class="courierNewHeading">Shop</h1>
+                <div id="firstRow">
+                    <div id="filterMenu" class="card">
+                        <a href="choose-room.html" id="breadcrumb"> ← Bedroom furniture</a>
+                        <div class="filterInput">
+                            <label>Search:</label> <br>
+                            <input type="text" id="searchBar" name="searchBar" onchange="searchShop()"> <br>
+                        </div>
+                        <div class="filterInput">
+                            <label>Type of Furniture:</label> <br>
+                            <select name="typeOfFurnitureDropdown" id="typeOfFurnitureDropdown" class="dropdown" onchange="filterByCategory()">
+                            </select>
+                        </div>
+                        <div class="filterInput">
+                            <label>Sort By:</label> <br>
+                            <select name="sortByDropdown" id="sortByDropdown" class="dropdown" onchange="sortItems()">
+                                <option value="lowestPrice">Price Low to High</option>
+                                <option value="highestPrice">Price High to Low</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </div>
+                        <div class="filterInput">
+                            <label>Price:</label> <br>
+                            <input type="text" id="minPrice" name="minPrice" class="priceInput" onchange="filterByPrice()"> 
+                            - 
+                            <input type="text" id="maxPrice" name="maxPrice" class="priceInput" onchange="filterByPrice()">
+                        </div>
+                    </div>
+                    <div id="shopItemsFirstRow" class="shopItemsContainer">
+                    </div>
+                </div>
+                <div id="shopItemsLowerRows" class="shopItemsContainer">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer" class="card">
+                <div id = footerText>
+                    <div id="footerLinks">
+                        <h3>Links</h3>
+                        <a href="index.html">Home</a>
+                        <a href="choose-room.html">Shop</a>
+                        <a href="what-we-buy.html">What we buy</a>
+                        <a href="contact-us.html">Contact us</a>
+                    </div>
+                    <div id="footerContactUs">
+                        <h3>Contact Us</h3>
+                        <p>rehome@email.com <br>
+                        +64 123 456 7899 <br>
+                        0800 12 34 56</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/itemHandler.js"></script>
+    <script type="module" src="Scripts/shoppingCart.js"></script>
+    <script src="Scripts/cartItemHandler.js"></script>
+    <script src="Scripts/data.js" type="module"></script>
+</body>
+</html>
