@@ -1,0 +1,854 @@
+html, body {
+    background-color: #8AA37C;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Jost, Helvetica, sans-serif;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+
+.courierNewHeading {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.cardBackground {
+    background-image: url(Images/Light-paper-background.jpg);
+    padding: 20px;
+}
+
+/* NAV BAR */
+
+.card {
+    width: 100%;
+    min-height: 75px;
+    background-image: url(Images/Light-card-background.jpg);
+    /*https://www.vecteezy.com/png/43848061-brown-textured-torn-paper-edge-natural-ripped-craft-paper-for-scrapbooking-and-collages Anna Lysenko*/
+    object-fit: fill;
+}
+
+#logo {
+    place-content: center;
+    width: 150px;
+    font-size: 2rem;
+    margin: 15px;
+    color: #5C4F41;
+}
+
+#hamburgerMenuIcon {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#shoppingCartMenuContainer {
+    position: absolute;
+    right: 8px;
+    width: 75px;
+}
+
+#numberOfCartItems {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    text-align: center;
+    align-self: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #a9e29e;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 5px rgba(0, 0, 0, 0.2),
+    0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+#menuOverlay {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/Light-card-background.jpg);
+    display: none;
+    flex-direction: column;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.menuText {
+    display: flex;
+    place-content: center;
+    color: #5C4F41;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px 15px;
+    max-width: 200px;
+}
+
+#navBar a:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+#navBar a:active {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+/* HOME PAGE */
+
+#homeImage {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#homeImage img {
+    width: 100%;
+}
+
+#imageHeadingText {
+    font-weight: normal;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+    font-size: 5rem;
+}
+
+#shopNowButton {
+    position: absolute;
+    top: 225px;
+    left: 40px;
+    font-size: 1.5rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#cardboardCard {
+    position: relative;
+    top: -75px;
+    transform: rotate(8deg);
+    text-align: center;
+}
+
+#cardboardTexture {
+    width: 350px;
+}
+
+#cardboardCard h2 {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50px;
+}
+
+.lightPaperCard {
+    background-image: url(Images/light-paper-background.jpg);
+    /*https://unsplash.com/photos/a-black-and-white-photo-of-a-person-on-a-surfboard-k4Lt0CjUnb0 João Vítor Duarte*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 5px rgba(0, 0, 0, 0.2),
+    0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+#newItemsCard {
+    width: 350px;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+    padding: 25px;
+}
+
+#newItemsHeading {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+}
+
+.shopItemsContainer {
+    align-self: start;
+}
+
+.itemCard{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    width: 325px;
+    max-width: 80vw;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 5px rgba(0, 0, 0, 0.2),
+    0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.openItemPageContainer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+.newItemImage {
+    align-self: center;
+    width: 300px;
+    max-width: 80vw;
+    height: 150px;
+    background-color: #000000;
+}
+
+.newItemImage img{
+    height: 150px;
+}
+
+.itemCard h3 {
+    place-content: center;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+    height: 75px;
+}
+
+.itemCard h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.CTAButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #a9e29e;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+/* CHOOSE ROOM */
+
+#shopHeading {
+    margin: 20px 5px;
+}
+
+#rooms {
+    display: flex;
+    flex-direction: column;
+}
+
+.room {
+    display: flex;
+    place-content: center;
+    position: relative;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.room img {
+    width: 300px;
+}
+
+.roomText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* SHOP PAGE */
+
+#shopBody {
+    background-image: url(Images/light-paper-background.jpg);
+}
+
+#shop {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#shop h1 {
+    margin: 20px 5px;
+}
+
+#filterMenu {
+    width: 300px;
+    max-width: 80vw;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 5px rgba(0, 0, 0, 0.2),
+    0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+#breadcrumb {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.filterInput {
+    margin: 20px 0;
+}
+
+.filterInput input, select, option {
+    font-family: Jost, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    height: 30px;
+    margin: 5px 0;
+    padding-left: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.dropdown {
+    background-color: #FFFFFF;
+}
+
+.priceInput {
+    width: 50px;
+}
+
+#shopItemsLowerRows {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ITEM DETAIL PAGE*/
+
+#itemDetailContainer {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+}
+
+#itemDetailImageContainer {
+    position: relative;
+    background-color: #000000;
+    width: 90%;
+    height: 200px;
+}
+
+#itemDetailImage {
+    height: 200px;
+    max-width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 30%;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#itemDetailInformation {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+#itemDetailHeading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    width: 90%;
+}
+
+#itemDetailSubheading {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+}
+
+#addToCartContainer {
+    width: 95%;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.CTAButtonLarge {
+    font-family: Jost;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: #a9e29e;
+    font-size: 2rem;
+    padding: 5px 10px;
+}
+
+#itemDetailDescription {
+    font-size: 1.5rem;
+}
+
+/* SHOPPING CART */
+
+#shoppingCartBackground {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+.CTAButtonBrown {
+    border: none;
+    border-radius: 5px;
+    background-color: #a69a8c;
+    font-size: 1.25rem;
+    padding: 5px 10px;
+    margin: 20px;
+    max-height: 50px;
+}
+
+.cartCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+    text-align: center;
+    width: 325px;
+    max-width: 80vw;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 5px rgba(0, 0, 0, 0.2),
+    0 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cartItemImage {
+    align-self: center;
+    width: 300px;
+    max-width: 80vw;
+    height: 150px;
+    background-color: #000000;
+}
+
+.cartItemImage img {
+    height: 150px;
+}
+
+.cartItemsQuantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: center;
+}
+
+.quantityButton {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+/* WHAT WE BUY */
+
+#whatWeBuyTextToSpeechContainer {
+    display: flex;
+    align-items: center;
+}
+
+#textToSpeechLabel {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+#whatWeBuyTextToSpeech {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid black;
+    background-color: #FFFFFF;
+}
+
+#whatWeBuyContent h2 {
+    font-size: 2rem;
+}
+
+#whatWeBuyContent p {
+    font-size: 1.25rem;
+}
+
+#whatWeBuyContent a {
+    color: #000000;
+}
+
+/* CONTACT US */
+
+#contactFormContainer {
+    display: flex;
+    place-content: center;
+}
+
+#contactUsForm {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+#contactUsInfo {
+    font-size: 1.5rem;
+}
+
+.contactUsLabel {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 250px;
+}
+
+.contactUsInput {
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.contactUsTextInput {
+    border: none;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    width: 250px;
+    height: 100px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 1rem;
+    place-content: center;
+    text-align: center;
+}
+
+#footer { 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2),
+    0 -4px 5px rgba(0, 0, 0, 0.2),
+    0 -8px 5px rgba(0, 0, 0, 0.2);
+}
+
+#footerText {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+#footerLinks {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#footerLinks a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#footerContactUs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/* MEDIUM DEVICES */
+
+@media only screen and (min-width: 800px) {
+    #imageHeadingText {
+        font-size: 8rem;
+    }
+
+    #cardboardCard {
+        text-align: center;
+        position: relative;
+        top: -250px;
+        left: 0;
+        width: 250px;
+    }
+
+    #cardboardTexture {
+        width: 300px;
+    }
+
+    #cardboardCard h2 { 
+        width: 275px;
+        left: 15px;
+        top: 60px;
+    }
+
+    /* HOME */
+
+    #shopNowButton {
+        top: 290px;
+    }
+
+    #newItemsCard {
+        width: fit-content;
+    }
+
+    .courierNewHeading {
+        font-size: 4rem;
+    }
+
+    #homeItemsContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* CHOOSE ROOM */
+
+    .room img {
+        width: 500px;
+    }
+
+    .roomText {
+        font-size: 2rem;
+    }
+
+    /* SHOP */
+    #shop h1 {
+        font-size: 5rem;
+    }
+
+    #firstRow, #shopItemsLowerRows {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        align-items: start;
+    }
+}
+
+/* LARGE DEVICES */
+
+@media only screen and (min-width: 1200px) {
+    #navBar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #links {
+        width: auto;
+        background-image: none;
+        box-shadow: none;
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        font-size: 3rem;
+    }
+
+    #links a {
+        background-image: none;
+        margin: 0 40px;
+        padding: 0 10px;
+    }
+
+    #navBar a {
+        display: flex;
+    }
+
+    #homeImage {
+        width: 50%;
+    }
+
+    #shopNowButton {
+        top: 290px;
+        left: 27.5%;
+    }
+
+    #cardboardCard {
+        top: -200px;
+        left: 25%;
+    }
+
+    #cardboardTexture {
+        width: 250px;
+    }
+
+    #cardboardCard h2 { 
+        font-size: 1.5rem;
+        /*width: 175px;*/
+        left: -10px;
+        top: 40px;
+    }
+
+    .itemCard {
+        margin: 0 20px 0 0;
+    }
+
+    /* HOME */
+
+    #newItemsCard {
+        margin-top: 50px;
+        width: fit-content;
+    }
+
+    #homeItemsContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* CHOOSE ROOM */
+
+    #rooms {
+        flex-direction: row;
+    }
+
+    .room {
+        width: 300px;
+    }
+
+    .room img {
+        width: 300px;
+    }
+
+    .roomText {
+        font-size: 1.5rem;
+    }
+
+    /* SHOP */
+
+    #firstRow {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    #shopItemsFirstRow {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    #shopItemsLowerRows {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    /* ITEM DETAIL */
+
+    #itemDetailContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #itemDetailImageContainer {
+        width: 50%;
+        height: 400px;
+    }
+
+    #itemDetailImage {
+        height: 400px;
+    }
+
+    .prev,
+    .next {
+        font-size: 2.5rem;
+        top: 40%;
+    }
+
+    #itemDetailInformation {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    #itemDetailHeading {
+        font-size: 3rem;
+    }
+
+    #addToCartContainer {
+        width: 60%;
+    }
+
+    /* CART */
+
+    #cartItemContainer {
+        width: 90%;
+    }
+
+    .cartCard {
+        display: grid;
+        grid-template-columns: 40% 15% 15% 15% 15%;
+        width: 100%;
+    }
+
+    .cartItemImage {
+        height: 200px;
+        width: 400px;
+    }
+
+    .cartItemImage img {
+        height: 200px;
+        max-width: 400px;
+    }
+
+    /* CONTACT US */
+    #contactUsBackground {
+        width: 45%;
+    }
+    
+}
