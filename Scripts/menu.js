@@ -81,3 +81,4 @@ window.addEventListener('resize', function() {
   timeout = setTimeout(location.reload(), delay);
 
 });
+
