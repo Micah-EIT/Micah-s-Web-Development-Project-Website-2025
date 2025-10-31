@@ -12,10 +12,12 @@ function openCloseNav() {
 
     if (menu.style.display == 'none') {
         menu.style.display = 'flex';
+        document.getElementById('shopNowButton').style.display = 'none';
         return;
     }
     else {
         menu.style.display = 'none';
+        document.getElementById('shopNowButton').style.display = 'block';
         return;
     }
 }
@@ -77,4 +79,5 @@ let timeout = false,
 window.addEventListener('resize', function() {
   clearTimeout(timeout);
   timeout = setTimeout(location.reload(), delay);
+
 });
