@@ -168,7 +168,7 @@ main {
 }
 
 .lightPaperCard {
-    background-image: url(Images/light-paper-background.jpg);
+    background-image: url(Images/Light-paper-background.jpg);
     /*https://unsplash.com/photos/a-black-and-white-photo-of-a-person-on-a-surfboard-k4Lt0CjUnb0 João Vítor Duarte*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
     0 4px 5px rgba(0, 0, 0, 0.2),
@@ -851,4 +851,5 @@ footer {
         width: 45%;
     }
     
+
 }
